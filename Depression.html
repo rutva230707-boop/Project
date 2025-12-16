@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calmify - Understanding Depression</title>
+ <link rel="stylesheet" href="Personality.css">
+</head>
+<body>
+  <header>
+    <h1>Understanding Depression</h1>
+    <p>Gentle information and small steps for heavy feelings.</p>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html">&larr; Back to Calmify Home</a>
+
+    <section class="card">
+      <h2>What is depression?</h2>
+      <p>
+        Depression is a mood condition where feelings of sadness, emptiness, or lack of interest last for weeks or longer and affect daily life. [web:69][web:71]
+      </p>
+      <p>
+        It is not a weakness. Many people experience depression, and with support and treatment, it can improve. [web:69][web:71]
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Common symptoms</h2>
+      <p>You may notice some of these signs:</p>
+      <ul>
+        <li>Feeling sad, empty, numb, or hopeless most of the day [web:69][web:71]</li>
+        <li>Losing interest in activities you used to enjoy [web:69]</li>
+        <li>Changes in sleep (sleeping too much or too little) [web:71]</li>
+        <li>Low energy, feeling tired almost every day [web:69]</li>
+        <li>Changes in appetite or weight [web:71]</li>
+        <li>Feeling guilty, worthless, or very critical of yourself [web:69]</li>
+        <li>Difficulty concentrating or making decisions [web:71]</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Simple coping strategies</h2>
+      <ul>
+        <li>Very small steps: Choose one tiny task, like brushing your teeth or drinking a glass of water. [web:63][web:66]</li>
+        <li>Light movement: A short walk, gentle stretching, or simple exercises can slowly lift mood. [web:59][web:60]</li>
+        <li>Routine: Try to wake up, eat, and sleep at similar times each day. [web:60][web:66]</li>
+        <li>Connect: Talk to someone you trust, even if it is just a short message. [web:59][web:76]</li>
+        <li>Limit alcohol and drugs, which can make depression worse. [web:60][web:73]</li>
+      </ul>
+    </section>
+
+    <!-- INTERACTIVE QUESTIONS -->
+    <section class="card">
+      <h2>Check in with yourself</h2>
+
+      <!-- Q1 -->
+      <div class="qa-title">1. Tiny action</div>
+      <p class="qa-question-text">Can you do one tiny helpful action in the next 5 minutes (for example: drink water, open a window, or stand up and stretch)?</p>
+      <label><input type="radio" name="dq1" value="yes"> Yes</label><br>
+      <label><input type="radio" name="dq1" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleDepression('dq1')">Submit</button>
+      <div id="dq1-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q2 -->
+      <div class="qa-title">2. Talk to someone</div>
+      <p class="qa-question-text">Is there someone you could send a short message to, just to say “hi” or “I am having a hard time”?</p>
+      <label><input type="radio" name="dq2" value="yes"> Yes</label><br>
+      <label><input type="radio" name="dq2" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleDepression('dq2')">Submit</button>
+      <div id="dq2-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q3 -->
+      <div class="qa-title">3. Rest and sleep</div>
+      <p class="qa-question-text">Would a short rest, turning off screens, or going to bed at a regular time help your body tonight?</p>
+      <label><input type="radio" name="dq3" value="yes"> Yes</label><br>
+      <label><input type="radio" name="dq3" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleDepression('dq3')">Submit</button>
+      <div id="dq3-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q4 -->
+      <div class="qa-title">4. Enjoyable moment</div>
+      <p class="qa-question-text">Is there one small thing that usually brings you a little comfort (music, warm drink, sunlight, favourite show)?</p>
+      <label><input type="radio" name="dq4" value="yes"> Yes</label><br>
+      <label><input type="radio" name="dq4" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleDepression('dq4')">Submit</button>
+      <div id="dq4-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q5 -->
+      <div class="qa-title">5. Professional support</div>
+      <p class="qa-question-text">Would you consider talking with a doctor, counsellor, or mental health professional about how you are feeling?</p>
+      <label><input type="radio" name="dq5" value="yes"> Yes</label><br>
+      <label><input type="radio" name="dq5" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleDepression('dq5')">Submit</button>
+      <div id="dq5-result" class="qa-result"></div>
+    </section>
+
+    <section class="card">
+      <h2>When to reach out for help</h2>
+      <p>
+        If depression lasts most days for more than two weeks or makes it hard to work, study, or care for yourself, it is important to reach out for help. [web:69][web:71]
+      </p>
+      <p class="disclaimer">
+        If you ever think about harming yourself, please contact emergency services or a crisis helpline in your area immediately. You deserve support and safety. [web:76]
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Calmify. You are not a burden.
+  </footer>
+
+  <script>
+    
+  </script>
+</body>
+</html>

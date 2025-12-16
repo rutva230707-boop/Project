@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calmify - Personality Disorders</title>
+  <link rel="stylesheet" href="Personality.css">
+</head>
+<body>
+  <header>
+    <h1>Personality Disorders</h1>
+    <p>Information with respect, understanding, and space for your experience.</p>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html">&larr; Back to Calmify Home</a>
+
+    <section class="card">
+      <h2>What are personality disorders?</h2>
+      <p>
+        Personality disorders are long‑term patterns in how a person thinks, feels, and relates to others that can cause distress or problems in daily life. [web:70][web:74]
+      </p>
+      <p>
+        They are real mental health conditions, and support, therapy, and understanding can help people manage symptoms and build a life that fits their values. [web:70][web:72]
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Common challenges</h2>
+      <ul>
+        <li>Intense emotions that may change quickly or feel hard to control [web:70][web:72]</li>
+        <li>Very strong fears of rejection, abandonment, or being hurt [web:72]</li>
+        <li>Conflict in relationships or feeling misunderstood by others [web:67][web:74]</li>
+        <li>Feeling unsure about identity, values, or goals [web:70]</li>
+        <li>Urges to act quickly or in risky ways when distressed [web:70][web:74]</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Helpful approaches</h2>
+      <ul>
+        <li>Therapy: Talking therapies like DBT or other structured approaches can help with emotions and relationships. [web:72][web:74]</li>
+        <li>Education: Learning about the diagnosis can reduce shame and increase self‑understanding. [web:70][web:67]</li>
+        <li>Support networks: Safe friends, family, or peer groups can offer connection and validation. [web:64][web:67]</li>
+        <li>Self‑care: Regular sleep, balanced food, movement, and calming activities support emotional regulation. [web:64][web:70]</li>
+      </ul>
+    </section>
+
+    <!-- INTERACTIVE QUESTIONS -->
+    <section class="card">
+      <h2>Questions for moments of strong emotion</h2>
+
+      <!-- Q1 -->
+      <div class="qa-title">1. Name the feeling</div>
+      <p class="qa-question-text">Can you pause for a moment and name one feeling you notice right now (for example: angry, sad, scared, empty)?</p>
+      <label><input type="radio" name="pq1" value="yes"> Yes</label><br>
+      <label><input type="radio" name="pq1" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handlePD('pq1')">Submit</button>
+      <div id="pq1-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q2 -->
+      <div class="qa-title">2. Check safety</div>
+      <p class="qa-question-text">Right now, are you physically safe in this moment (for example: in a room, not in immediate danger)?</p>
+      <label><input type="radio" name="pq2" value="yes"> Yes</label><br>
+      <label><input type="radio" name="pq2" value="no"> No / Not sure</label><br>
+      <button class="btn" type="button" onclick="handlePD('pq2')">Submit</button>
+      <div id="pq2-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q3 -->
+      <div class="qa-title">3. Relationship pause</div>
+      <p class="qa-question-text">Before reacting to someone, can you take a short pause (for example: 5 slow breaths) before sending a message or speaking?</p>
+      <label><input type="radio" name="pq3" value="yes"> Yes</label><br>
+      <label><input type="radio" name="pq3" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handlePD('pq3')">Submit</button>
+      <div id="pq3-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q4 -->
+      <div class="qa-title">4. Support person</div>
+      <p class="qa-question-text">Is there someone safe you can tell, “My feelings are really big right now, can you listen for a few minutes?”</p>
+      <label><input type="radio" name="pq4" value="yes"> Yes</label><br>
+      <label><input type="radio" name="pq4" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handlePD('pq4')">Submit</button>
+      <div id="pq4-result" class="qa-result"></div>
+      <hr>
+
+      <!-- Q5 -->
+      <div class="qa-title">5. Plan with therapist</div>
+      <p class="qa-question-text">Do you have (or would you like to have) a plan with a therapist or professional for what to do when emotions feel overwhelming?</p>
+      <label><input type="radio" name="pq5" value="yes"> Yes</label><br>
+      <label><input type="radio" name="pq5" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handlePD('pq5')">Submit</button>
+      <div id="pq5-result" class="qa-result"></div>
+    </section>
+
+    <section class="card">
+      <h2>When to reach out for help</h2>
+      <p>
+        If intense emotions, relationship conflict, or impulsive actions are making life feel unmanageable, support from a mental health professional can help. [web:72][web:74]
+      </p>
+      <p class="disclaimer">
+        If you ever feel in danger of harming yourself or others, please contact emergency services or a crisis helpline right away. You deserve to stay safe while you get support. [web:72]
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Calmify. Your feelings matter.
+  </footer>
+
+  <script href="Personality.js"></script>
+    
+  </script>
+</body>
+</html>

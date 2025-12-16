@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calmify - Understanding Anxiety</title>
+  <link rel="stylesheet" href="Personality.css">
+</head>
+<body>
+  <header>
+    <h1>Understanding Anxiety</h1>
+    <p>Gentle information and tools to help when worry feels too big.</p>
+  </header>
+
+  <main>
+    <a class="back-link" href="index.html">&larr; Back to Calmify Home</a>
+
+    <section class="card">
+      <h2>What is anxiety?</h2>
+      <p>
+        Anxiety is a feeling of worry, fear, or unease that can show up in your body and your thoughts. 
+        It becomes a problem when it is very strong, happens often, or makes daily life hard. [web:19]
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Common symptoms</h2>
+      <p>You may notice some of these signs when you feel anxious:</p>
+      <ul>
+        <li>Feeling nervous, on edge, or like something bad might happen [web:19]</li>
+        <li>Racing heart, faster breathing, sweating, or shaking [web:31]</li>
+        <li>Tight muscles, headaches, or stomach discomfort [web:27]</li>
+        <li>Difficulty concentrating or sleeping [web:19]</li>
+        <li>Wanting to avoid people, places, or situations that make you anxious [web:27]</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Simple coping strategies</h2>
+      <ul>
+        <li>Slow breathing: Follow the 4–6–8 breathing from the home page to calm your body. [web:27]</li>
+        <li>Grounding: Name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, 1 you can taste. [web:25]</li>
+        <li>Gentle movement: Stretch, walk slowly, or move your body in a way that feels safe. [web:30]</li>
+        <li>Talk to someone you trust: A friend, family member, teacher, or counsellor. [web:26]</li>
+        <li>Keep a regular sleep routine and limit caffeine, especially later in the day. [web:30]</li>
+      </ul>
+    </section>
+
+    <!-- QUESTION 1 -->
+    <section class="card">
+      <div class="qa-title">1. Stay with you?</div>
+      <p class="qa-question-text">Do you want me (or someone you trust) to stay with you while this is happening?</p>
+
+      <label><input type="radio" name="q1" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q1" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q1')">Submit</button>
+
+      <div id="q1-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 2 -->
+    <section class="card">
+      <div class="qa-title">2. Breathe together?</div>
+      <p class="qa-question-text">Can we try breathing slowly together using the 4–6–8 pattern?</p>
+
+      <label><input type="radio" name="q2" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q2" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q2')">Submit</button>
+
+      <div id="q2-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 3 -->
+    <section class="card">
+      <div class="qa-title">3. Start grounding?</div>
+      <p class="qa-question-text">Can you name 5 things you can see around you right now?</p>
+
+      <label><input type="radio" name="q3" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q3" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q3')">Submit</button>
+
+      <div id="q3-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 4 -->
+    <section class="card">
+      <div class="qa-title">4. Continue grounding?</div>
+      <p class="qa-question-text">Can you try 4 things you can touch, 3 you can hear, 2 you can smell, and 1 you can taste?</p>
+
+      <label><input type="radio" name="q4" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q4" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q4')">Submit</button>
+
+      <div id="q4-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 5 -->
+    <section class="card">
+      <div class="qa-title">5. Make it easier?</div>
+      <p class="qa-question-text">Would anything make this feel a bit easier, like sitting down or holding something?</p>
+
+      <label><input type="radio" name="q5" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q5" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q5')">Submit</button>
+
+      <div id="q5-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 6 -->
+    <section class="card">
+      <div class="qa-title">6. Talk or quiet?</div>
+      <p class="qa-question-text">Would you like me to talk gently, or just be quiet and sit with you?</p>
+
+      <label><input type="radio" name="q6" value="yes"> Talk / say something</label><br>
+      <label><input type="radio" name="q6" value="no"> Be quiet with me</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q6')">Submit</button>
+
+      <div id="q6-result" class="qa-result"></div>
+    </section>
+
+    <!-- QUESTION 7 -->
+    <section class="card">
+      <div class="qa-title">7. Plan for next time?</div>
+      <p class="qa-question-text">When this calms down, would you like to decide together what helps you most next time?</p>
+
+      <label><input type="radio" name="q7" value="yes"> Yes</label><br>
+      <label><input type="radio" name="q7" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleQuestion('q7')">Submit</button>
+
+      <div id="q7-result" class="qa-result"></div>
+    </section>
+
+    <section class="card">
+      <h2>When to reach out for help</h2>
+      <p>
+        Consider talking to a mental health professional or doctor if anxiety is stopping you from going to school, work, or doing daily activities, or if it has been very strong for several weeks. [web:27][web:30]
+      </p>
+      <p class="disclaimer">
+        This website offers general information and coping ideas. It is not a replacement for professional diagnosis, treatment, or emergency support. 
+        If you ever feel in danger of harming yourself or others, please contact local emergency services or a crisis helpline in your area. [web:19]
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Calmify. You are not alone in this.
+  </footer>
+
+  <script>
+    
+  </script>
+</body>
+</html>

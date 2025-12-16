@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <title>Calmify - Panic & Fear</title>
+ <link rel="stylesheet" href="Personality.css">
+</head>
+<body>
+  <header>
+    <h1>Panic & Fear</h1>
+    <p>Support for moments when fear feels sudden and very strong.</p>
+  </header>
+
+
+  <main>
+    <a class="back-link" href="index.html">&larr; Back to Calmify Home</a>
+
+
+    <section class="card">
+      <h2>What is a panic attack?</h2>
+      <p>
+        A panic attack is a sudden rush of intense fear or discomfort that usually peaks within minutes and can include physical symptoms like racing heart and shortness of breath.
+      </p>
+      <p>
+        Panic attacks can feel scary, but they are not usually dangerous. They often pass even if they feel very strong.
+      </p>
+    </section>
+
+
+    <section class="card">
+      <h2>Common signs</h2>
+      <ul>
+        <li>Racing or pounding heart, chest discomfort</li>
+        <li>Shortness of breath, feeling like you cannot get enough air</li>
+        <li>Dizziness, shaking, sweating, or feeling very hot or very cold</li>
+        <li>Feeling unreal or detached from your surroundings</li>
+        <li>Fear of losing control, “going crazy,” or dying</li>
+      </ul>
+    </section>
+
+
+    <section class="card">
+      <h2>Grounding and calming ideas</h2>
+      <ul>
+        <li>Slow breathing: Breathe in slowly, hold briefly, and breathe out longer than you breathed in. </li>
+        <li>5‑4‑3‑2‑1 senses grounding: Notice things you can see, touch, hear, smell, and taste.</li>
+        <li>Cold water or ice: Gently hold something cool or splash your face with cool water.</li>
+        <li>Movement: Walk slowly, stretch, or gently tense and relax muscles.</li>
+      </ul>
+    </section>
+
+
+    <!-- INTERACTIVE QUESTIONS -->
+    <section class="card">
+      <h2>Questions for during a panic moment</h2>
+
+
+      <!-- Q1 -->
+      <div class="qa-title">1. Notice your breath</div>
+      <p class="qa-question-text">Right now, can you place a hand on your chest or belly and notice your breathing for a few seconds?</p>
+      <label><input type="radio" name="fq1" value="yes"> Yes</label><br>
+      <label><input type="radio" name="fq1" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleFear('fq1')">Submit</button>
+      <div id="fq1-result" class="qa-result"></div>
+      <hr>
+
+
+      <!-- Q2 -->
+      <div class="qa-title">2. Try one slow breath</div>
+      <p class="qa-question-text">Can you try one slow breath in through your nose and a longer breath out through your mouth?</p>
+      <label><input type="radio" name="fq2" value="yes"> Yes</label><br>
+      <label><input type="radio" name="fq2" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleFear('fq2')">Submit</button>
+      <div id="fq2-result" class="qa-result"></div>
+      <hr>
+
+
+      <!-- Q3 -->
+      <div class="qa-title">3. Use your senses</div>
+      <p class="qa-question-text">Can you look around and name at least 3 things you can see right now?</p>
+      <label><input type="radio" name="fq3" value="yes"> Yes</label><br>
+      <label><input type="radio" name="fq3" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleFear('fq3')">Submit</button>
+      <div id="fq3-result" class="qa-result"></div>
+      <hr>
+
+
+      <!-- Q4 -->
+      <div class="qa-title">4. Use cold or touch</div>
+      <p class="qa-question-text">Is there something you can safely hold or touch (like a piece of fabric, chair, water, or ice) to help ground you?</p>
+      <label><input type="radio" name="fq4" value="yes"> Yes</label><br>
+      <label><input type="radio" name="fq4" value="no"> No</label><br>
+      <button class="btn" type="button" onclick="handleFear('fq4')">Submit</button>
+      <div id="fq4-result" class="qa-result"></div>
+      <hr>
+
+
+      <!-- Q5 -->
+      <div class="qa-title">5. Check your safety</div>
+      <p class="qa-question-text">Are you in physical danger right now, or are you in a safe place while your body feels afraid?</p>
+      <label><input type="radio" name="fq5" value="yes"> I am safe, just scared</label><br>
+      <label><input type="radio" name="fq5" value="no"> I am not safe / not sure</label><br>
+      <button class="btn" type="button" onclick="handleFear('fq5')">Submit</button>
+      <div id="fq5-result" class="qa-result"></div>
+    </section>
+
+
+    <section class="card">
+      <h2>When to reach out for help</h2>
+      <p>
+        If panic or strong fear is happening often, making you avoid many places, or feels out of control, a mental health professional can help with treatment and coping skills. You can talk to your doctor, a counsellor, or a trusted person in your life about how you are feeling.
+      </p>
+      <p class="disclaimer">
+        If you ever think your symptoms might be from a medical problem, or you feel like you might collapse or be in real physical danger, seek urgent medical help or emergency services.
+      </p>
+    </section>
+  </main>
+
+
+  <footer>
+    &copy; 2025 Calmify. Panic will pass, you are not alone.
+  </footer>
+
+
+  <script>
+    
+  </script>
+</body>
+</html>
